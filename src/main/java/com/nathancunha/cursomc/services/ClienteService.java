@@ -77,12 +77,15 @@ public class ClienteService {
 				objDto.getBairro(), objDto.getCep(), cli, cid);
 		cli.getEnderecos().add(end);
 		cli.getTelefones().add(objDto.getTelefone1());
+		
 		if (objDto.getTelefone2() != null) {
 			cli.getTelefones().add(objDto.getTelefone2());
 		}
+		
 		if (objDto.getTelefone3() != null) {
 			cli.getTelefones().add(objDto.getTelefone3());
 		}
+		
 		return cli;
 	}
 
